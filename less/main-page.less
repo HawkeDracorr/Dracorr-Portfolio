@@ -1,0 +1,136 @@
+.fullscreen-bg {
+
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  overflow: hidden;
+  z-index: -100;
+}
+.fs-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+
+.window {
+  position: absolute;
+  background-color: @95grey;
+  background-color: @95grey;
+  border-top: lighten(@95grey, 35%) solid 2px;
+  border-left: lighten(@95grey, 35%) solid 2px;
+  border-bottom: darken(@95grey, 35%) solid 2px;
+  border-right: darken(@95grey, 35%) solid 2px;
+  box-shadow: black 1px 1px 1px;
+  width: 750px;
+  height: 550px;
+
+  margin-top: 5rem;
+  margin-left: 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .window-iframe {
+    background-color: white;
+    width: 98%;
+    height: 87%;
+
+    border-top: darken(@95grey, 35%) solid 2px;
+    border-left: darken(@95grey, 35%) solid 2px;
+    border-bottom: lighten(@95grey, 35%) solid 2px;
+    border-right: lighten(@95grey, 35%) solid 2px;
+
+    margin-top: 1rem;
+    margin-right: 3px;
+  }
+
+  .windowheader {
+    padding: 10px;
+    cursor: move;
+    background-color: navy;
+    color: white;
+    width: 97%;
+    margin-top: .25rem;
+  }
+
+}
+
+
+
+
+
+
+
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  background-color: @95grey;
+  border-top: lighten(@95grey, 35%) solid 2px;;
+
+  padding-top: .20rem;
+  padding-bottom: .20rem;
+  padding-left: .20rem;
+
+
+  .start-btn {
+    // outline: red solid 2px;
+    background-color: @95grey;
+    border-top: lighten(@95grey, 35%) solid 2px;
+    border-left: lighten(@95grey, 35%) solid 2px;
+    border-bottom: darken(@95grey, 35%) solid 2px;
+    border-right: darken(@95grey, 35%) solid 2px;
+    box-shadow: black 1px 1px 1px;
+
+    display: flex;
+    align-items: center;
+    max-height: 30px;
+    max-width: 56px;
+    padding-right: 64px;
+    padding-left: 3px;
+
+    span {
+      padding-bottom: 3px;
+      padding-left: 3px;
+      font-family: 'Ubuntu',sans-serif;
+      font-size: 1rem;
+
+    }
+
+    .btn-logo {
+      img {
+        width: 22px;
+        height: 22px;
+        // padding-top: 2px;
+      }
+    }
+  }
+
+  .status-area {
+    margin-right: 1rem;
+    background-color: @95grey;
+    border-top: darken(@95grey, 35%) solid 2px;
+    border-left: darken(@95grey, 35%) solid 2px;
+    border-bottom: lighten(@95grey, 35%) solid 2px;
+    border-right: lighten(@95grey, 35%) solid 2px;
+
+    padding-top: .25rem;
+    padding-bottom: .25rem;
+    padding-left: .15rem;
+    padding-right: .50rem;
+
+    b {
+      font-family: 'Ubuntu', sans-serif;
+    }
+  }
+}

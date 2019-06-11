@@ -1,0 +1,234 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 62.5%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+body {
+  background-color: #008080;
+}
+.fullscreen-bg {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  overflow: hidden;
+  z-index: -100;
+}
+.fs-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.window {
+  position: absolute;
+  background-color: #D3D3D3;
+  border-top: #ffffff solid 2px;
+  border-left: #ffffff solid 2px;
+  border-bottom: #7a7a7a solid 2px;
+  border-right: #7a7a7a solid 2px;
+  box-shadow: black 1px 1px 1px;
+  width: 750px;
+  height: 550px;
+  margin-top: 5rem;
+  margin-left: 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.window .window-iframe {
+  background-color: white;
+  width: 98%;
+  height: 87%;
+  border-top: #7a7a7a solid 2px;
+  border-left: #7a7a7a solid 2px;
+  border-bottom: #ffffff solid 2px;
+  border-right: #ffffff solid 2px;
+  margin-top: 1rem;
+  margin-right: 3px;
+}
+.window .windowheader {
+  padding: 10px;
+  cursor: move;
+  background-color: navy;
+  color: white;
+  width: 97%;
+  margin-top: 0.25rem;
+}
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  background-color: #D3D3D3;
+  border-top: #ffffff solid 2px;
+  padding-top: 0.2rem;
+  padding-bottom: 0.2rem;
+  padding-left: 0.2rem;
+}
+footer .start-btn {
+  background-color: #D3D3D3;
+  border-top: #ffffff solid 2px;
+  border-left: #ffffff solid 2px;
+  border-bottom: #7a7a7a solid 2px;
+  border-right: #7a7a7a solid 2px;
+  box-shadow: black 1px 1px 1px;
+  display: flex;
+  align-items: center;
+  max-height: 30px;
+  max-width: 56px;
+  padding-right: 64px;
+  padding-left: 3px;
+}
+footer .start-btn span {
+  padding-bottom: 3px;
+  padding-left: 3px;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 1rem;
+}
+footer .start-btn .btn-logo img {
+  width: 22px;
+  height: 22px;
+}
+footer .status-area {
+  margin-right: 1rem;
+  background-color: #D3D3D3;
+  border-top: #7a7a7a solid 2px;
+  border-left: #7a7a7a solid 2px;
+  border-bottom: #ffffff solid 2px;
+  border-right: #ffffff solid 2px;
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+  padding-left: 0.15rem;
+  padding-right: 0.5rem;
+}
+footer .status-area b {
+  font-family: 'Ubuntu', sans-serif;
+}
