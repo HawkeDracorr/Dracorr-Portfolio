@@ -127,32 +127,21 @@ table {
   border-spacing: 0;
 }
 body {
-  background-color: #008080;
+  background-color: #ffd1dc;
 }
-.fullscreen-bg {
-  position: fixed;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  overflow: hidden;
-  z-index: -100;
+h1,
+h2,
+h3,
+h5,
+h5,
+h6 {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 1em;
 }
-.fs-video {
+#window {
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
-.window {
-  position: absolute;
-  background-color: #D3D3D3;
-  border-top: #ffffff solid 2px;
-  border-left: #ffffff solid 2px;
-  border-bottom: #7a7a7a solid 2px;
-  border-right: #7a7a7a solid 2px;
-  box-shadow: black 1px 1px 1px;
+  background-color: #285EFF;
+  box-shadow: black 1px 1px 5px;
   width: 750px;
   height: 550px;
   margin-top: 5rem;
@@ -161,45 +150,41 @@ body {
   flex-direction: column;
   align-items: center;
 }
-.window .window-iframe {
+#window .window-iframe {
   background-color: white;
   width: 98%;
-  height: 87%;
-  border-top: #7a7a7a solid 2px;
-  border-left: #7a7a7a solid 2px;
-  border-bottom: #ffffff solid 2px;
-  border-right: #ffffff solid 2px;
-  margin-top: 1rem;
-  margin-right: 3px;
+  height: 90.5%;
+  margin-top: 0.5rem;
 }
-.window .windowheader {
+#window #windowheader {
+  display: flex;
+  justify-content: space-between;
   padding: 10px;
   cursor: move;
-  background-color: navy;
+  background-color: #285EFF;
   color: white;
-  width: 97%;
-  margin-top: 0.25rem;
+  width: 97.3%;
 }
-footer {
+.taskbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
   position: fixed;
   width: 100%;
+  height: 1.5rem;
   bottom: 0;
-  background-color: #D3D3D3;
-  border-top: #ffffff solid 2px;
+  background-color: #285EFF;
+  box-shadow: 0px -1px 3px black;
   padding-top: 0.2rem;
   padding-bottom: 0.2rem;
   padding-left: 0.2rem;
 }
-footer .start-btn {
-  background-color: #D3D3D3;
-  border-top: #ffffff solid 2px;
-  border-left: #ffffff solid 2px;
-  border-bottom: #7a7a7a solid 2px;
-  border-right: #7a7a7a solid 2px;
-  box-shadow: black 1px 1px 1px;
+.taskbar .start-btn {
+  background-color: #285EFF;
+  border-right: 1px solid black;
+  border-left-width: 0;
+  border-top-width: 0;
+  border-bottom-width: 0;
   display: flex;
   align-items: center;
   max-height: 30px;
@@ -207,28 +192,26 @@ footer .start-btn {
   padding-right: 64px;
   padding-left: 3px;
 }
-footer .start-btn span {
-  padding-bottom: 3px;
+.taskbar .start-btn span {
+  padding-bottom: 2px;
   padding-left: 3px;
   font-family: 'Ubuntu', sans-serif;
   font-size: 1rem;
+  color: white;
 }
-footer .start-btn .btn-logo img {
+.taskbar .start-btn .btn-logo img {
   width: 22px;
   height: 22px;
 }
-footer .status-area {
+.taskbar .status-area {
   margin-right: 1rem;
-  background-color: #D3D3D3;
-  border-top: #7a7a7a solid 2px;
-  border-left: #7a7a7a solid 2px;
-  border-bottom: #ffffff solid 2px;
-  border-right: #ffffff solid 2px;
+  background-color: #285EFF;
   padding-top: 0.25rem;
   padding-bottom: 0.25rem;
   padding-left: 0.15rem;
   padding-right: 0.5rem;
 }
-footer .status-area b {
+.taskbar .status-area b {
   font-family: 'Ubuntu', sans-serif;
+  color: white;
 }

@@ -9,45 +9,50 @@
     <link rel="stylesheet" href="css/index.css">
     <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/89fc67dc87.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   </head>
 
 
   <body>
 
-
-    <div class="fullscreen-bg">
-      <video loop muted autoplay class="fs-video">
-        <source src="img/glitch-neon.webm" type="video/webm">
-      </video>
-    </div>
-    <div class="window">
-      <div class="windowheader">
-        Internet Explorer
+<!-- Main window, must stay at top! -->
+    <div id="window">
+      <div id="windowheader">
+        <h3>Window</h3>
+        <div class="window-btns">
+          <i class="far fa-window-minimize"></i>
+          <i class="far fa-window-maximize"></i>
+          <i class="fas fa-times"></i>
+        </div>
       </div>
       <div class="window-iframe">
-        <!-- test -->
+        <!-- <iframe src="hawke-resume/index.html"></iframe> -->
+        test
       </div>
     </div>
+
 
 
 <!-- footer stuff -->
-    <footer>
-      <!-- <img src="img/start-menu.png" /> -->
+    <footer class="taskbar">
+
       <button class="start-btn">
         <div class="btn-logo">
-          <img src="img/start-menu.png" />
         </div>
         <span>start</span>
       </button>
 
       <div class="status-area">
-        <!-- <div class="stat-img">
-          <img src="img/inbox.png" />
-        </div> -->
-
         <b>12:00 AM</b>
       </div>
+
     </footer>
+
+<!-- javascript test -->
+  <script type="text/javascript">
+    $('#windowheader').draggable();
+  </script>
+
   </body>
 
 

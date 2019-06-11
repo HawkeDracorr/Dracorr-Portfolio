@@ -1,82 +1,51 @@
-.fullscreen-bg {
-
-  position: fixed;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  overflow: hidden;
-  z-index: -100;
-}
-.fs-video {
+#window {
+  // outline: red dashed 2px;
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
-
-
-.window {
-  position: absolute;
-  background-color: @95grey;
-  background-color: @95grey;
-  border-top: lighten(@95grey, 35%) solid 2px;
-  border-left: lighten(@95grey, 35%) solid 2px;
-  border-bottom: darken(@95grey, 35%) solid 2px;
-  border-right: darken(@95grey, 35%) solid 2px;
-  box-shadow: black 1px 1px 1px;
+  background-color: @guiBlue;
+  background-color: @guiBlue;
+  box-shadow: black 1px 1px 5px;
   width: 750px;
   height: 550px;
-
   margin-top: 5rem;
   margin-left: 5rem;
+
   display: flex;
   flex-direction: column;
   align-items: center;
 
   .window-iframe {
+    // outline: red dashed 1px;
     background-color: white;
     width: 98%;
-    height: 87%;
-
-    border-top: darken(@95grey, 35%) solid 2px;
-    border-left: darken(@95grey, 35%) solid 2px;
-    border-bottom: lighten(@95grey, 35%) solid 2px;
-    border-right: lighten(@95grey, 35%) solid 2px;
-
-    margin-top: 1rem;
-    margin-right: 3px;
+    height: 90.5%;
+    margin-top: .5rem;
+    // margin-right: 3px;
   }
 
-  .windowheader {
+  #windowheader {
+    // outline: red dashed 1px;
+    display: flex;
+    justify-content: space-between;
     padding: 10px;
     cursor: move;
-    background-color: navy;
+    background-color: @guiBlue;
     color: white;
-    width: 97%;
-    margin-top: .25rem;
+    width: 97.3%;
+    }
   }
 
-}
 
-
-
-
-
-
-
-
-footer {
+.taskbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
 
   position: fixed;
   width: 100%;
+  height: 1.5rem;
   bottom: 0;
-  background-color: @95grey;
-  border-top: lighten(@95grey, 35%) solid 2px;;
+  background-color: @guiBlue;
+  box-shadow: 0px -1px 3px black;
 
   padding-top: .20rem;
   padding-bottom: .20rem;
@@ -84,13 +53,13 @@ footer {
 
 
   .start-btn {
-    // outline: red solid 2px;
-    background-color: @95grey;
-    border-top: lighten(@95grey, 35%) solid 2px;
-    border-left: lighten(@95grey, 35%) solid 2px;
-    border-bottom: darken(@95grey, 35%) solid 2px;
-    border-right: darken(@95grey, 35%) solid 2px;
-    box-shadow: black 1px 1px 1px;
+    background-color: @guiBlue;
+    border-right: 1px solid black;
+
+    // Not sure why, but there's some border being applied
+    border-left-width: 0;
+    border-top-width: 0;
+    border-bottom-width: 0;
 
     display: flex;
     align-items: center;
@@ -100,10 +69,11 @@ footer {
     padding-left: 3px;
 
     span {
-      padding-bottom: 3px;
+      padding-bottom: 2px;
       padding-left: 3px;
       font-family: 'Ubuntu',sans-serif;
       font-size: 1rem;
+      color: white;
 
     }
 
@@ -118,11 +88,9 @@ footer {
 
   .status-area {
     margin-right: 1rem;
-    background-color: @95grey;
-    border-top: darken(@95grey, 35%) solid 2px;
-    border-left: darken(@95grey, 35%) solid 2px;
-    border-bottom: lighten(@95grey, 35%) solid 2px;
-    border-right: lighten(@95grey, 35%) solid 2px;
+    background-color: @guiBlue;
+    // border-left: 2px solid grey;
+
 
     padding-top: .25rem;
     padding-bottom: .25rem;
@@ -131,6 +99,7 @@ footer {
 
     b {
       font-family: 'Ubuntu', sans-serif;
+      color: white;
     }
   }
 }
